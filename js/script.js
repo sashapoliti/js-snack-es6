@@ -9,3 +9,15 @@ nome dell'ospite (guestName),
 posto occupato (place),
 Generiamo e stampiamo in console la lista per i segnaposto.
 */
+
+const guests = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello' ];
+
+const stampGuests = guests.map((e, i) => {
+    return {
+        tableName : 'Tavolo Vip',
+        guestName : e,
+        place : i + 1
+    }
+})
+
+console.log(stampGuests);
