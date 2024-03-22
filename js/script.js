@@ -74,3 +74,19 @@ const upperCaseName = students.map((e) => {
 })
 
 console.log(upperCaseName);
+
+const bestStudents = students.filter((e) => {
+    return e.grades > 70
+}).map((e) => {
+    return e.name
+})
+
+console.log(bestStudents);
+
+const bestOfTheBestStudents = students.filter((e) => {
+    return e.grades > 70 && e.id > 120
+}).map((e) => {
+    return e.name
+})
+
+console.log(bestOfTheBestStudents);
