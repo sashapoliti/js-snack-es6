@@ -130,7 +130,16 @@ function snackFour() {
     el.fouls = getRndInteger(1, 20);
   });
 
-  console.log(teams);
+  let newTeams = [...teams]; //spread operator finally
+
+   newTeams = newTeams.map((el) => {
+    const { name, fouls } = el; //deconstruction
+    const section = document.querySelector("main section");
+    section.innerHTML += `<br>{ Squadra: ${name}, Falli: ${fouls} }`; //template literal
+    return {name: name, fouls: fouls};
+  });
+
+  console.log(newTeams);
 }
 
 snackFour();
