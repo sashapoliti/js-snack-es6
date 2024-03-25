@@ -4,7 +4,7 @@ Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare in console la bici con peso minore utilizzando destructuring e template literal */
 
-function snackThree() {
+export function snackThree() {
   const racingBikes = [
     {
       mname: "Specialized Tarmac SL7",
@@ -71,7 +71,7 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 
 
 
-function snackFour() {
+export function snackFour() {
   const teams = [
     {
       name: "Manchester United",

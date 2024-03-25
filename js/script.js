@@ -1,4 +1,5 @@
-
+import { snackThree } from "./objSnack.js";
+import { snackFour } from "./objSnack.js";
 
 /* 
 SNACK 1
@@ -92,3 +93,6 @@ const bestOfTheBestStudents = students.filter((e) => {
 })
 
 console.log(bestOfTheBestStudents);
+
+snackThree();
+snackFour();
