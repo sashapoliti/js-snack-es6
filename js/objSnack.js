@@ -1,3 +1,4 @@
+import { getRndInteger } from "./utility.js";
 /* SNACK 3
 Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
@@ -68,7 +69,7 @@ Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli su
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
-import { getRndInteger } from "./utility";
+
 
 function snackFour() {
   const teams = [
@@ -123,4 +124,13 @@ function snackFour() {
       fouls: 0,
     }
   ];
+
+  teams.forEach((el) => {
+    el.points = getRndInteger(1, 50);
+    el.fouls = getRndInteger(1, 20);
+  });
+
+  console.log(teams);
 }
+
+snackFour();
