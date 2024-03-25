@@ -51,11 +51,72 @@ function snackThree() {
     return bike.weight < acc.weight ? bike : acc;
   }, racingBikes[0]); //reduce for min value
 
-  const {name, weight} = result; //deconstruction
+  const { name, weight } = result; //deconstruction
 
-  const section = document.querySelector('main section');
+  const section = document.querySelector("main section");
   section.innerHTML = `La bici che pesa meno si chiama "${name}" e pesa per la precisione ${weight} KG`; //template literal
-  return result
+  return result;
 }
 
 console.log(snackThree());
+
+/* 
+SNACK 4
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+*/
+
+const teams = [
+  {
+    name: "Manchester United",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Liverpool",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Real Madrid",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "FC Barcelona",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Bayern Munich",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Juventus",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Paris Saint-Germain",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Inter",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "Manchester City",
+    points: 0,
+    fouls: 0,
+  },
+  {
+    name: "AC Milan",
+    points: 0,
+    fouls: 0,
+  },
+];
