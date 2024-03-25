@@ -68,55 +68,59 @@ Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli su
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
-const teams = [
-  {
-    name: "Manchester United",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Liverpool",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Real Madrid",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "FC Barcelona",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Bayern Munich",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Juventus",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Paris Saint-Germain",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Inter",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "Manchester City",
-    points: 0,
-    fouls: 0,
-  },
-  {
-    name: "AC Milan",
-    points: 0,
-    fouls: 0,
-  },
-];
+import { getRndInteger } from "./utility";
+
+function snackFour() {
+  const teams = [
+    {
+      name: "Manchester United",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Liverpool",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Real Madrid",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "FC Barcelona",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Bayern Munich",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Juventus",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Paris Saint-Germain",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Inter",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "Manchester City",
+      points: 0,
+      fouls: 0,
+    },
+    {
+      name: "AC Milan",
+      points: 0,
+      fouls: 0,
+    }
+  ];
+}
