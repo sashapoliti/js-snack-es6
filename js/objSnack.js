@@ -6,44 +6,56 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 function snackThree() {
   const racingBikes = [
     {
-      model: "Specialized Tarmac SL7",
+      mname: "Specialized Tarmac SL7",
       weight: 7.2,
     },
     {
-      model: "Trek Madone SLR 9",
+      name: "Trek Madone SLR 9",
       weight: 7.4,
     },
     {
-      model: "Cannondale SuperSix EVO",
+      name: "Cannondale SuperSix EVO",
       weight: 7.1,
     },
     {
-      model: "Giant TCR Advanced SL",
+      name: "Giant TCR Advanced SL",
       weight: 7.3,
     },
     {
-      model: "Pinarello Dogma F12",
+      name: "Pinarello Dogma F12",
       weight: 6.8,
     },
     {
-      model: "BMC Teammachine SLR01",
+      name: "BMC Teammachine SLR01",
       weight: 7.0,
     },
     {
-      model: "Scott Addict RC Ultimate",
+      name: "Scott Addict RC Ultimate",
       weight: 6.9,
     },
     {
-      model: "Cervélo R5",
+      name: "Cervélo R5",
       weight: 7.2,
     },
     {
-      model: "Colnago C64",
+      name: "Colnago C64",
       weight: 7.5,
     },
     {
-      model: "Merida Reacto",
+      name: "Merida Reacto",
       weight: 7.6,
     },
   ];
+
+  const result = racingBikes.reduce((acc, bike) => {
+    return bike.weight < acc.weight ? bike : acc;
+  }, racingBikes[0]); //reduce for min value
+
+  const {name, weight} = result; //deconstruction
+
+  const section = document.querySelector('main section');
+  section.innerHTML = `La bici che pesa meno si chiama "${name}" e pesa per la precisione ${weight} KG`; //template literal
+  return result
 }
+
+console.log(snackThree());
